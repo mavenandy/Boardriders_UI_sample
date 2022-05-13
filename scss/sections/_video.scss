@@ -1,0 +1,139 @@
+@use '../custom' as *;
+
+.video_section {
+  margin:70px auto 100px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+
+  .video_mobile_display {
+    display: none;
+  }
+
+  .video-container {
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: $white;
+    width: 100%;
+
+    .v_box {
+      position: relative;
+      width: 100%;
+      max-width: 1650px;
+      min-width: 992px;
+      height: 700px;
+      background: rgba($black,.8);
+
+      .video_desktop_display {
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        video {
+          position: absolute;
+          top:0;
+          left:0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .content {
+        position: absolute;
+        top:80;
+        left:80;
+        width: 100%;
+        height:100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        background: rgba($black,0);
+        transition: .25s ease-in-out;
+        &:hover {
+          background: rgba($black,.7);
+          transition: .25s ease-in-out;
+        }
+
+
+        button {
+          cursor: pointer;
+          &.btn{
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding-left: 20px;
+            padding-right: 20px;
+            align-self: center;
+            &.btn-outline-white {
+              color: $white;
+              border-color: $white;
+            }
+            &:hover {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 991px) { 
+  .video_section {
+    margin:20px auto 100px;
+
+    .video_desktop_display {
+      display: none;
+    }
+
+    .video-container {
+      
+      .v_box {
+        
+        max-width: 670px;
+        width: 100%;
+        height: 638px;
+        background: none;
+      
+        .video_mobile_display {
+          display: block;
+          margin: auto 20px;
+          position: absolute;
+          top: 0;
+          left: 15px;
+          width: 95%;
+          height: 100%;
+          video {
+            position: absolute;
+            top:0;
+            left:0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+
+      .content {
+        background: none;
+        transition: none;
+      }
+      button {
+        align-self: center;
+        &.btn{
+          &.btn-outline-white {
+            color: $white;
+            border-color: $white;
+          }
+        }
+      }
+    }
+
+  }
+}

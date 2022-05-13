@@ -1,0 +1,41 @@
+@use '../custom' as *;
+
+nav {
+  text-transform: uppercase;
+}
+.navbar-expand-sm {
+  flex-direction: row;
+  .navbar-nav {
+    .nav-link {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 400;
+      letter-spacing: 2px;;
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
+    }
+  }
+}
+
+@media all and (max-width: 991px) { 
+
+  .navbar-expand-sm {
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+  
+  a {
+    &.nav-link {
+      width: max-content;
+      padding-top:1.5em;
+      padding-bottom:1.5em;
+    }
+  }
+}
+
+@media all and (max-width: 575px) { 
+
+  .navbar-nav {
+    flex-direction: row;
+  }
+  
+}

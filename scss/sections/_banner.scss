@@ -1,0 +1,19 @@
+.hero_banner_desktop {
+  display: none;
+}
+.hero_banner_mobile {
+  display: block;
+  width:1920px;
+  height: auto;
+  margin: auto;
+}
+
+@media (max-width: 991px) { 
+  .hero_banner_desktop {
+    display: block;
+    margin: auto;
+  }
+  .hero_banner_mobile {
+    display: none;
+  }
+}

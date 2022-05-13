@@ -1,0 +1,114 @@
+@use '../custom' as *;
+
+.carousel_section {
+  color: $black;
+  margin-top:2em;
+  h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1em;
+  }
+
+
+  .card-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    figure {
+      img {
+        width: 360px;
+        height: auto;
+
+        -webkit-filter: blur(0);
+        filter: blur(0);
+      }
+    }
+
+    &:hover {
+      figure {
+        img {
+          -webkit-filter: blur(3px);
+          filter: blur(3px);
+          -webkit-transition: .3s ease-in-out;
+          transition: .3s ease-in-out;
+        }
+      }
+    }
+    
+  }
+
+  a {
+    margin: 2em;
+    &.btn-outline-dark {
+      color: #212529;
+      border-color: #212529;
+      &:hover {
+        color:$white;
+      }
+    }
+  }
+
+  .owl-carousel {
+
+    .owl-nav {
+      position: relative;
+      top: -390px;
+      display: flex;
+      justify-content: space-between;
+      button {
+        span {
+          font-size: 50px;
+        }
+      }
+    }
+    .owl-dots {
+        margin: -50px auto 100px;
+        button {
+        &.owl-dot {
+          &.active {
+            span {
+              color: black;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.custom-owl{
+  .owl-dots {
+    button{
+      &.owl-dot {
+        span {
+          background: $white;
+          border:1px solid $black !important;
+        }
+      }
+      &.active {
+        span {
+          background: $black !important;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 991px) { 
+  .carousel_section {
+    .card-img {
+      img {
+        width: 240px;
+      }
+    }
+
+    .owl-nav { 
+      display: none !important;
+    }
+    .owl-dots { 
+      display: none !important;
+    }
+  }
+}

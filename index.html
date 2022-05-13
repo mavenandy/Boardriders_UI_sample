@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BOARDRIDERS Frontend Test</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./style/css/owl.theme.default.css">
+    <link rel="stylesheet" href="./style/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Open+Sans&family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+
+  <div class="container-fluid justify-content-center custom-container">
+    <img src="./assets/hero_banner_desktop.jpg" class="hero_banner_desktop img-fluid" alt="hero_banner_desktop">
+    <img src="./assets/hero_banner_mobile.jpg" class="hero_banner_mobile img-fluid" alt="hero_banner_mobile">
+  </div>
+  
+  <nav class="navbar-expand-sm navbar-light bg-primary">
+      <ul class="navbar-nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.shutterstock.com/image-photo/dog-surfing-on-surfboard-wearing-sunglasses-219328042">Hawaii</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.shutterstock.com/image-photo/huntington-beach-ca-september-23-2017-1010141788" tabindex="-1" aria-disabled="true">Japan</a>
+        </li>  
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.shutterstock.com/image-photo/small-dog-sitting-on-paddle-board-1855363096" tabindex="-1" aria-disabled="true">China</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.shutterstock.com/image-photo/huntington-beach-ca-september-23-2017-1010119408" tabindex="-1" aria-disabled="true">Sri Lanka</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.shutterstock.com/image-photo/wellness-healthy-dog-pug-breed-wearing-1375724702" tabindex="-1" aria-disabled="true">Morocco</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="video_section">
+      <div class="video-container">
+        <div class="v_box">
+          <div class="video_desktop_display">
+            <!--width="1650" height="700"-->
+            <video id="video_desktop"  width="1650" height="700" autoplay muted loop> 
+              <source src="./assets/video_desktop.mp4" type="video/mp4">
+              Your browser does not support HTML5 video.
+            </video>
+          </div>
+          <div class="video_mobile_display">
+            <!-- <div class="container-md"> -->
+              <!--width="670" height="638"-->
+              <video id="video_mobile"  autoplay muted loop> 
+                <source src="./assets/video_mobile.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video>
+            <!-- </div> -->
+          </div>
+          <div class="content">
+            <button type="button" class="btn btn-outline-white" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Watch the video</button>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="content_section text-center">
+      <div class="container-xxl justify-content-center">
+        <div class="row justify-content-center">
+          <div class="col-sm-6 col-md-7 col-lg-8">
+            <p>No matter where you're from, no matter where you're going-the sea knows no ditterence. 
+              Its not how we look, what we own, or the languages we speak-here we all have one voice. 
+              Know the Feeling is about this sensation, this magic that connects us all.</p>
+            <p>To the girls who see the horizon not as a limit, but as an invitation. 
+                To the girls who know they can find famiy wherever there is salt and sand. 
+                It's a freedom, it's a comtort; it's familiarity in a foreign land. It's the bond that we forge across the sea. 
+                through the sea. And when you feel It, you'll know. We know the feeling</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel_section">
+      <div class="container-xxl justify-content-center text-center">
+          <h1>Watch the Episodes</h1>
+
+          <div class="owl-carousel owl-theme custom-owl">
+            <div class="card-img">
+              <figure><img src="./assets/carousel/china.jpg" alt="China"></figure>
+              <a href="https://www.youtube.com/watch?v=3MtashftJV0" class="btn btn-outline-dark">Watch Now</a>
+            </div>
+            <div class="card-img">
+              <figure><img src="./assets/carousel/hawaii.jpg" alt="Hawaii"></figure>
+              <a href="https://www.youtube.com/watch?v=nSaI796QXe0" class="btn btn-outline-dark">Watch Now</a>
+            </div>
+            <div class="card-img">
+              <figure><img src="./assets/carousel/japan.jpeg" alt="Japan"></figure>
+              <a href="https://www.youtube.com/watch?v=avfC7FkP5sU" class="btn btn-outline-dark">Watch Now</a>
+            </div>
+            <div class="card-img">
+              <figure><img src="./assets/carousel/morocco.jpeg" alt="Morocco"></figure>
+              <a href="https://www.youtube.com/watch?v=4--rjyaNzS8" class="btn btn-outline-dark">Watch Now</a>
+            </div>
+            <div class="card-img">
+              <figure><img src="./assets/carousel/sri_lanka.jpeg" alt="Sri_Lanka"></figure>
+              <a href="https://www.youtube.com/watch?v=HLq4Dde8wr8" class="btn btn-outline-dark">Watch Now</a>
+            </div>
+          </div>
+
+      </div>
+    </div>
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <iframe width="560" height="315" style="margin: 20px auto;" src="https://www.youtube.com/embed/-ZLLJ2Fu03c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
